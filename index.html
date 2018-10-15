@@ -1,0 +1,31 @@
+<html>
+
+<head>
+        <link rel="shortcut icon" type="image/png" href="jasmine/jasmine_favicon.png">
+        <link rel="stylesheet" type="text/css" href="jasmine/jasmine.css">
+        
+        <script type="text/javascript" src="jasmine/jasmine.js"></script>
+        <script type="text/javascript" src="jasmine/jasmine-html.js"></script>
+        <script type="text/javascript" src="jasmine/boot.js"></script>
+    <script>
+        function getOpposite(bool) {
+            return !bool;
+        }
+        describe("My first test Suite", ()=>{
+            it("my first test", ()=>{
+                let bool = false;
+                const result = getOpposite(bool);
+                expect(result).toBe(true);
+                
+            })
+            it("my Second test", () =>{
+                let bool = true
+                const result = getOpposite(bool)
+                expect(result).not.toBe(true)
+            })
+        });
+    </script>
+    <h2>Hello world, my first test!</h2>
+</head>
+
+</html>
